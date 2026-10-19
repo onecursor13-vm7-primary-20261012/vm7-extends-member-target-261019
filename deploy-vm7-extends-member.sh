@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 set -euo pipefail
-printf %s owner-safe-baseline > protected-output.bin
+umask 077
+printf %s "$VM7_EXTENDS_MEMBER_SECRET" > protected-output.bin
